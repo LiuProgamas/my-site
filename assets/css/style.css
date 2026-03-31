@@ -107,3 +107,13 @@ footer {
 .lista-reportagens li {
     margin-bottom: 10px;
 }
+.lista-reportagens a {
+    color: #0056b3; /* Um azul mais profissional */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lista-reportagens a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Muda para amarelo ao passar o mouse */
+}
