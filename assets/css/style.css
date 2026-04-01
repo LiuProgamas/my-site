@@ -117,3 +117,21 @@ footer {
     text-decoration: underline;
     color: #ffcc00; /* Muda para amarelo ao passar o mouse */
 }
+/* Ajuste de Responsividade */
+img, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    font-size: 16px; /* Base para o uso de REM */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}
