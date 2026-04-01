@@ -26,6 +26,27 @@
                 <h1>A Novela de Botafogo: O Embate entre o Poder Público e o Grupo Sendas</h1>
                 <p class="linha-fina">Justiça suspende desapropriação de imóvel bilionário e barra leilão da Prefeitura para a FGV.</p>
                 <p class="data">Por <strong>LiuDevv</strong> | Publicado em 31 de Março de 2026</p>
+<div class="carousel-container">
+    <div class="slides">
+        <div class="slide active">
+            <img src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Local atual">
+            <div class="legenda-slide">O cenário atual da disputa em Botafogo</div>
+        </div>
+
+        <div class="slide">
+            <img src="https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Projeto de Inovação">
+            <div class="legenda-slide">O futuro Distrito de Inovação pretendido</div>
+        </div>
+
+        <div class="slide">
+            <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="FGV e Tecnologia">
+            <div class="legenda-slide">Integração acadêmica e tecnológica</div>
+        </div>
+    </div>
+
+    <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+    <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+</div>
             </header>
 
             <div class="capa-container">
@@ -99,6 +120,15 @@
     <footer>
         <p>&copy; 2026 - Criado por <strong>LiuDevv</strong> para o Trabalho de Faculdade</p>
     </footer>
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
 
+    function mudarSlide(n) {
+        slides[slideIndex].classList.remove('active'); // Esconde o atual
+        slideIndex = (slideIndex + n + slides.length) % slides.length; // Calcula o próximo
+        slides[slideIndex].classList.add('active'); // Mostra o novo
+    }
+</script>
 </body>
 </html>
