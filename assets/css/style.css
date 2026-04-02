@@ -12,22 +12,6 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background: #2c3e50;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-}
-
-/* ... código que já existe acima ... */
-
-header {
-    background: #2c3e50;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-}
-
 /* COLOQUE O NOVO CÓDIGO AQUI EMBAIXO */
 nav ul {
     list-style: none !important;
@@ -306,72 +290,56 @@ html {
     cursor: pointer;
     text-decoration: underline;
 }
-/* Barra Superior Estilo G1 */
+/* --- NOVO HEADER ESTILO G1 REVISADO --- */
 .header-g1 {
-    background-color: #c4170c; /* O vermelho oficial */
-    color: white;
-    padding: 10px 0;
+    background-color: #c4170c !important; /* Vermelho G1 */
+    color: white !important;
+    padding: 12px 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
-    font-family: sans-serif;
+    z-index: 10000;
+    width: 100%;
 }
 
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
+    display: flex !important; /* Força o alinhamento lado a lado */
+    flex-direction: row !important;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
 
-/* Lado Esquerdo */
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-/* Logo Centralizada */
+/* Garante que o texto do logo não tenha sombra ou estilos antigos */
 .logo-g1 {
-    font-size: 2.5rem;
-    font-weight: 900;
+    font-size: 2.8rem !important;
+    font-weight: 900 !important;
     margin: 0;
     letter-spacing: -2px;
+    color: white !important;
+    line-height: 1;
 }
 
-/* Lado Direito (Busca e Login) */
-.header-right {
-    display: flex;
+.header-left, .header-right {
+    display: flex !important;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .search-box {
-    background: rgba(0, 0, 0, 0.2); /* Fundo escurecido suave */
-    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 6px 12px;
     border-radius: 4px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    font-size: 0.8rem;
-}
-
-.login-box {
-    display: flex;
-    align-items: center;
     gap: 8px;
-    cursor: pointer;
-    font-weight: bold;
     font-size: 0.8rem;
+    font-weight: bold;
 }
 
-/* Ajuste para o texto não ficar colado no topo */
+/* Remove margem do topo do corpo para o header encostar no teto */
 body {
-    margin-top: 0;
+    margin: 0;
+    padding-top: 0;
 }
