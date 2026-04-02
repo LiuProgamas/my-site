@@ -306,3 +306,72 @@ html {
     cursor: pointer;
     text-decoration: underline;
 }
+/* Barra Superior Estilo G1 */
+.header-g1 {
+    background-color: #c4170c; /* O vermelho oficial */
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: sans-serif;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Lado Esquerdo */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Logo Centralizada */
+.logo-g1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+/* Lado Direito (Busca e Login) */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    background: rgba(0, 0, 0, 0.2); /* Fundo escurecido suave */
+    padding: 5px 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.login-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Ajuste para o texto não ficar colado no topo */
+body {
+    margin-top: 0;
+}
